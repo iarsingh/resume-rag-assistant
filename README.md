@@ -1,5 +1,12 @@
 # Resume RAG Assistant
 
+## Overview
+
+A beginner RAG lab for asking questions about a resume, answering only from a tiny local corpus. `POST /ask` compares the words in a question with the corpus and returns an answer only when there is enough overlap; a question with too little overlap is refused rather than answered with a guess. The service is a small Python HTTP app with pytest tests run in GitHub Actions.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop lab with a tiny sample corpus; it does not call a hosted model or apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
